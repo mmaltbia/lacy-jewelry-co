@@ -1,0 +1,36 @@
+li{
+	display: block;
+	text-decoration: none;
+	padding-top: 6px;
+}
+#shop-banner{
+	padding: 30px;
+}
+.small-caps{
+	font-size: 16px;
+	font-family: 'Libre Baskerville', serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.small-verdana{
+	font-size: 14px;
+	font-family: 'Verdana', serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.product-thumbnail{
+	width: 100%;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+#footer-container{
+	margin-top: 100px;
+}
+.thumbnail-container{
+	padding-bottom: 35px;
+}
+
+.thumbnail-underline{
+	border-bottom: solid 1px #DBDADA;
+	padding-bottom: 45px;
+}

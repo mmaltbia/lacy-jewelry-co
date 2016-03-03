@@ -1,0 +1,21 @@
+{
+  "name": "bangle-band-production",
+  "version": "1.0.0",
+  "description": "Production version of the Bangle & Band Website.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/lolomimi/bb-production"
+  },
+  "author": "Michelle M.",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "fs": "0.0.2",
+    "mongoose": "^4.1.10"
+  }
+}

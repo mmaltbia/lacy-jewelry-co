@@ -1,0 +1,318 @@
+body {
+    margin-top: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+ul {
+	padding: 0;
+}
+
+a {
+	color: #fff;
+
+}
+
+div.navbar-header button {
+    border: none;
+}
+.navbar-inverse {
+    background: #000;
+}
+#nav{
+	background-color: #000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#divider{
+	padding-top: 12px;
+	margin-top: 3px;
+}
+#landing-container{
+	background: url("../images/landing-page.jpg")no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    min-height: 450px;
+}
+#logo{
+	color: white;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+}
+.logo-img{
+	height: 20px;
+}
+.navbar-nav a{
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+}
+.italic-landing{
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
+	font-size: 28px;
+}
+.italic{
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
+	font-size: 28px;
+	color: #000;
+	letter-spacing: 2px;
+}
+.red-landing{
+	color: red;
+	font-size: 28px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.caps{
+	color: #000;
+	font-size:24px;
+	font-family: 'Libre Baskerville', serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+#cta{
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+#cta a{
+    color: black;
+    text-decoration: none;
+}
+#cta a:hover{
+    color: White;
+    text-decoration: none;
+}
+
+#cta:hover {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+.btn-text{
+	color: #000;
+	text-transform: uppercase;
+	font-size: 22px;
+	letter-spacing: 2px;
+	padding: 15px;
+	border: solid 3px #000;
+}
+
+.container-heading{
+	margin-top: 50px;
+}
+
+.copy-heading{
+	color: #000;
+	font-size: 22px;
+}
+#video-container hr{
+	border: solid 1px #000;
+	width: 25px;
+}
+#testimonial-container{
+	margin-top: 145px;
+	background: url("../images/armandsky.jpg")no-repeat;
+	background-size: cover;
+	padding-bottom: 145px;
+    background-attachment: fixed;
+}
+#testimonials{
+	background-color: #fff;
+	color: #000;
+	border: solid 10px #000;
+	margin-top: 80px;
+}
+.testimonial-text{
+	font-family: "Libre Baskerville", serif;
+	color: #000;	
+	font-style: italic;
+	font-size: 24px;
+	padding: 35px;
+	padding-bottom: 10px;
+}
+.testimonial-name{
+	padding-bottom: 25px;
+}
+#conceals-fitbit{
+	background: url("../images/conceals1.jpg")no-repeat;
+	background-size: cover;
+	height: 600px;
+	bottom: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#conceals-fitbit p{
+	color: #fff;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#conceals-hairtie{
+	background: url("../images/conceals2.jpg")no-repeat;
+	background-size: cover;
+	height: 600px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#conceals-hairtie p{
+	color: #fff;
+}
+.overlay{
+	background-color:rgba(0,0,0,.75);
+	height: 100%;
+}
+.overlay:hover {
+	background-color:rgba(0,0,0,0);
+	height: 100%;
+}
+#featured-container{
+	background: url("../images/grey-shirt.jpg")no-repeat;
+	background-size: cover;
+	padding-bottom: 145px;
+    background-attachment: fixed;
+}
+
+#featured-heading > span.italic, #featured-heading > span.caps {
+	color: #fff;
+}
+.featured-logos{
+	max-width: 100px;
+	padding: 15px;
+}
+#recent-container > div.row > div {
+	border: none;
+	margin-top: 80px;
+}
+#recent-container > div.row > div > img{
+	width: 330px;
+}
+.ig-caption{
+	font-family: 'Libre Baskerville', serif;
+	word-wrap: break-word;
+}
+.ig-handle{
+	margin-top: 10px;
+	padding-bottom: 60px;
+}
+#footer-container{
+	background-color: #000;
+	color: #fff;
+	padding-left: 50px;
+	padding-bottom: 10px;
+	padding-top: 50px;
+}
+
+#footer-container a:hover{
+    color: #FF3E00;
+    text-decoration: none;
+}
+
+#footer-container li{
+	display: block;
+	text-decoration: none;
+}
+#logo-footer{
+	margin-top: 40px;
+}
+.footer-heading{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 18px;
+    font-weight: bold;
+	letter-spacing: 2px;
+	padding-bottom: 15px;
+}
+#footer-text{
+	margin-top: 20px;
+	padding-bottom:40px;
+}
+
+#copyright{
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+
+
+/* Extra small devices (phones, less than 768px) */
+@media(max-width:767px){
+	#logo {
+		color: white;
+		font-family: 'Libre Baskerville', serif;
+		font-size: 30px;
+		text-transform: uppercase;
+		letter-spacing: 6px;
+		text-align: center;
+	}
+	#landing-copy{
+		margin-top: 55px;
+	}
+	.landing-copy{
+		font-size: 18px;
+	}
+    
+    #bs-example-navbar-collapse-1 > ul > li:nth-child(2) > a {
+        display: none;
+    }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media(min-width:768px){
+	#logo{
+		padding-left: 35px;
+	}
+
+	#shop-press{
+		color: #fff;
+	}
+
+	.navbar-nav a {
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 10px;
+	}
+
+	.navbar-nav>li>a {
+		padding: 5px;
+		line-height: 30px;
+	}
+	#landing-copy{
+		margin-top: 14.5%;
+	}
+	.landing-copy{
+		font-size: 20px;
+	}
+	#video{
+		margin-top: 45px;
+		max-width: 800px;
+		height: 365px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media(min-width:992px){
+	.navbar-nav a {
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 12px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media(min-width:1200px){
+	.navbar-nav a {
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 12px;
+	}
+
+}

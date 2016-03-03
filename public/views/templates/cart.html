@@ -1,0 +1,27 @@
+<div ng-controller="CartCtrl" class="row">
+  <div id="cart-body" class="container">
+    <div class="col-xs-12 text-center row sale-banner">
+      <img src="../images/sale-banner.jpg" class="" alt="">
+    </div>
+    <div class="title col-xs-12 row">
+      <span class="italic">Shopping</span>
+      <span class="caps">Bag</span>
+    </div>
+    <div ng-repeat="product in bag">
+      <div class="row">
+        <div class="product-img col-xs-1">
+          <img class="more-images" ng-src="{{product.image}}" alt="">
+        </div>
+        <div class="col-xs-4">
+          <p>{{product.productName}}</p>
+          <p>$ {{product.price}}</p>
+        </div>
+        <div class="col-xs-3">
+          <button ng-click="removeFromCart(product);">Remove</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

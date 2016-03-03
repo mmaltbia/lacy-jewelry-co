@@ -1,0 +1,33 @@
+<div ng-controller="ProductsCtrl" class="container-fluid">
+    <div class="row">
+        <div id="shop-banner" class="col-xs-12 text-center">
+            <img src="../images/shop-banner2.jpg" width="100%">
+        </div>
+    </div>
+ 
+
+
+  <div class="container"> 
+    <div class="col-sm-2">
+      <span class="small-caps">Bracelets</span><br>
+      <ul>
+        <li class="small-verdana">Gracen</li>
+        <li class="small-verdana">Gemstone</li>
+        <li class="small-verdana">Stackable</li>
+      </ul>
+    </div>
+
+    <div class="col-sm-10">
+      <div class="col-sm-4 text-center thumbnail-container" ng-repeat="product in products">
+        <div class="thumbnail-underline">
+          <a ng-href="/shop/{{product.productName}}" ng-click="init()">
+            <img class="product-thumbnail" ng-src="{{product.images[0]}}">
+            <span class="caps">{{product.productName}}</span><br>
+            <span class="copy">$ {{product.unitPrice}}</span><br>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

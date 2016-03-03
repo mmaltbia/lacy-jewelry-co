@@ -1,0 +1,96 @@
+<div id="landing-container" class="container-fluid" ng-controller="MainCtrl">
+      
+  <div id="landing-copy" class="col-xs-10 col-xs-offset-1 text-center" style="color: #fff;">
+    <span class="italic-landing">sleek</span>
+    <span class="red-landing"> + </span>
+    <span class="italic-landing"> modern</span>
+    <p class="landing-copy">The only pieces you will ever need.</p>
+    <div>
+      <button id="cta" class="btn-text btn-default"><a href="/shop">shop collection</a></button>
+    </div>
+  </div>    
+
+</div> <!--Landing Container Close-->
+    
+    <div id="video-container" class="container-fluid">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center container-heading">
+        <span class="italic">21st century</span> &nbsp;
+        <span class="caps">jewelry</span>
+        <hr class="video-hr">
+        <span class="copy-heading">Not your average accessory.</span>
+      </div>
+        <div class="col-xs-10 col-xs-offset-1 text-center">
+            <iframe class="col-xs-10 col-xs-offset-1 embed-responsive-item" id="video" src="https://www.youtube.com/embed/rAgvqdWbUxc" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div> <!--Video Container Close-->
+
+    <div id="testimonial-container" class="container-fluid">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center container-heading">
+        <span class="italic">people are </span>
+        <span class="caps">talking</span> &nbsp;
+        <span class="italic">about us</span>
+      </div>
+      <div id="testimonials" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center">
+        <div>
+          <p class="testimonial-text">“I’m in love with this bangle! So cute, and it does double duty!”<p>
+          <p class="testimonial-name">- Alison, California</p>
+        </div>
+      </div>
+    </div> <!--Testimonial Container Close-->
+
+    <div id="conceals-container" class="container-fluid">
+      <div class="row">
+        <div id="conceals-fitbit" class="col-xs-12 col-sm-6 text-center">
+            <p class="italic overlay">everyday.</p>
+        </div>
+        <div id="conceals-hairtie" class="col-xs-12 col-sm-6 text-center">
+          <p class="italic overlay">any occasion.</p>
+        </div>
+      </div>
+    </div> <!--Conceals Container Close-->
+
+    <div id="featured-container" class="container-fluid">
+      <div class="row">
+        <div id="featured-heading" class="col-xs-12 text-center container-heading white">
+          <span class="italic">featured</span>&nbsp;
+          <span class="caps">on</span>
+        </div>
+        <div id="testimonials" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center">
+          <div class="col-xs-6 col-sm-3">
+            <a href="#">
+                <img class="featured-logos" src="http://2.bp.blogspot.com/-smJHkKbmW4o/UfdswBhSnWI/AAAAAAAAbDk/hmaw2U9bqmI/s1600/Refinery29+logo+2013.png" style="padding-top:28px; padding-bottom: 28px;">
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <a href="#">
+              <img class="featured-logos" src="http://www.vectorsland.com/imgd/l3485-glamour-revista-logo-36517.png" alt="">
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <a href="#">
+                <img class="featured-logos" src="https://media.licdn.com/media/p/6/000/1f3/307/063f8cf.png" style="padding-top:38px; padding-bottom: 38px;">
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <a href="#">
+                <img class="featured-logos" src="https://upload.wikimedia.org/wikipedia/en/9/94/PureWow_logo.png" style="padding-top:38px; padding-bottom: 38px;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> <!--Featured Container Close-->
+
+    <div id="recent-container" class="container-fluid">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center container-heading">
+        <span class="italic">recent</span>
+        <span class="caps">love</span>
+      </div>
+      <div class="row" ng-show="photos.length > 0">
+        <div class="col-sm-4 text-center" ng-repeat="photo in photos">
+          <img ng-src="{{photo.images.standard_resolution.url}}"><br>
+          <img src="../images/quote.png" style="width: 65px; padding: 10px;"><br>
+          <p class="ig-caption col-sm-8 col-sm-offset-2">"{{photo.caption.text}}"</p>
+          <span class="ig-handle col-sm-8 col-sm-offset-2">- @{{photo.user.username}}</span>
+        </div>
+      </div>
+    </div> <!--Recent Love Container Close-->

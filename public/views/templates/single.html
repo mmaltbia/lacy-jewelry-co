@@ -1,0 +1,83 @@
+<div class="container-fluid" ng-controller="SingleProductCtrl">
+  
+  <div id="shop-banner" class="col-xs-12 text-center">
+    <img src="../images/shop-banner.jpg">
+  </div>
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <div>
+          <img class="product-thumbnail" ng-src="{{product.images[0]}}">
+        </div>
+      </div>
+
+      <div class="col-sm-7 product-details">
+            <span class="black-caps">{{product.productName}}</span><br>
+            <span class="copy">$ {{product.unitPrice}} USD</span><br>
+            <span class="copy">{{product.description}}</span><br>
+            <span class="copy">{{product.materials}}</span><br>
+            <span class="copy">{{product.measurements}}</span><br>
+            <div>
+              <button id="addCartBtn" ng-click="addCart(product);" class="addbtn">Add To Bag</button>
+            </div>
+            <div>
+              <a href="#"><img src="../images/social-icons/facebook2.svg" class="social-icon" alt=""></a>
+              <a href="#"><img src="../images/social-icons/twitter.svg" class="social-icon" alt=""></a>
+              <a href="#"><img src="../images/social-icons/pinterest.svg" class="social-icon" alt=""></a>
+            </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-5">
+        <p class="caps">More Views</p>
+        <div class="col-xs-3" ng-repeat="image in images">
+          <img src="{{image}}" class="more-images" alt="">
+        </div>
+      </div>
+      <div class="row">
+      
+        
+      </div>
+      </div>
+    </div>   
+  </div>
+
+  <div id="footer-container" class="container-fluid">
+    <div class="row">
+        <a href="/">
+          <img class="logo-img" src="../images/white-text-logo.png" alt="">
+        </a>
+    </div>
+    <div id="footer-text" class="row">
+      <div class="col-xs-12 col-sm-1">
+        <span class="footer-heading">Explore</span>
+        <br>
+        <ul>
+          <li><a href="/shop">Shop</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-1">
+        <span class="footer-heading">About</span>
+        <br>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <span class="footer-heading">Contact</span>
+        <br>
+        <ul>
+            <li>Customer Service | <a href="mailto: hello@lacyjewelryco">hello@lacyjewelryco.com</a></li>
+          <li>Collaborate | <a href="mailto: collab@lacyjewelryco.com">collab@lacyjewelryco.com</a></li>
+          <li>PR | <a href="mailto: pr@lacyjewelryco.com">pr@lacyjewelryco.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="copyright" class="col-xs-12 text-center">
+        <span>Lacy Jewelry Co. &copy; | All Rights Reserved.</span>
+    </div>
+  </div>
+</div>

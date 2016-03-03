@@ -1,0 +1,20 @@
+.black-caps {
+   	font-family: 'Libre Baskerville', serif;
+	font-size: 35px;
+	text-transform: uppercase;
+	color: #000;
+	letter-spacing: 2px;
+}
+
+.product-details {
+    margin-top: 50px;
+}
+
+.social-icon{
+	height: 25px;
+}
+
+.more-images{
+	height: 100px;
+}
+

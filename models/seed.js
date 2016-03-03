@@ -1,0 +1,46 @@
+var newProducts = [{
+		productName: "Hayleigh",
+		itemNumber: "TRE101",
+		unitPrice: 36.00,
+		unitsInStock: 88,
+		unitsOnOrder: 150,
+		quantityPerUnit: 1, 
+		reorderLevel: 40,
+		discount: 0.00,
+		weight: 2.00,
+		description: "The Hayleigh is back by popular demand. Dressed up or dressed down no arm party is complete without it.", 
+		materials: "Lucite, gold plate.",
+		measurements: "7.5 inch circumference",
+		images: ['../images/bracelets/tre101-1.jpg', '../images/bracelets/tre101-2.jpg']
+	},
+	{
+		productName: "Lo",
+		itemNumber: "TRE102",
+		unitPrice: 32.00,
+		unitsInStock: 73,
+		unitsOnOrder: 150,
+		quantityPerUnit: 1, 
+		reorderLevel: 40,
+		discount: 0.00,
+		weight: 2.25,
+		description: "You deserve the 'Lo'. This beauty amps up any outfit.", 
+		materials: "Lucite, gold plate.",
+		measurements: "7.5 inch circumference",
+		images: ['../images/bracelets/tre102-1.jpg', '../images/bracelets/tre102-2.jpg']
+	},
+	{
+		productName: "Sammy",
+		itemNumber: "TRE103",
+		unitPrice: 38.00,
+		unitsInStock: 68,
+		unitsOnOrder: 150,
+		quantityPerUnit: 1, 
+		reorderLevel: 40,
+		discount: 0.00,
+		weight: 2.60,
+		description: "Sammy is the edgy piece your wardrobe craves.", 
+		materials: "Lucite, gold plate.",
+		measurements: "7.5 inch circumference",
+		images: ['../images/bracelets/tre103-1.jpg', '../images/bracelets/tre103-2.jpg']
+	}
+];

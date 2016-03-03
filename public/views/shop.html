@@ -1,0 +1,68 @@
+<div ng-controller="ProductsCtrl" class="container-fluid">
+  
+  <div id="shop-banner" class="col-xs-12 text-center">
+    <img src="../images/shop-banner.jpg">
+  </div>
+
+  <div class="container"> 
+    <div class="col-sm-2">
+      <span class="small-caps">Bracelets</span><br>
+      <ul>
+        <li class="small-verdana">Tresslet</li>
+        <li class="small-verdana">Gymstone</li>
+        <li class="small-verdana">Stackable</li>
+      </ul>
+    </div>
+
+    <div class="col-sm-10">
+      <div class="col-sm-4 text-center thumbnail-container" ng-repeat="product in products">
+        <div class="thumbnail-underline">
+          <a ng-href="/shop/{{product.productName}}" ng-click="init()">
+            <img class="product-thumbnail" ng-src="{{product.images[0]}}">
+            <span class="caps">{{product.productName}}</span><br>
+            <span class="copy">$ {{product.unitPrice}}</span><br>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-container" class="container-fluid">
+    <div class="row">
+        <a href="/">
+          <img class="logo-img" src="../images/white-text-logo.png" alt="">
+        </a>
+    </div>
+    <div id="footer-text" class="row">
+      <div class="col-xs-12 col-sm-1">
+        <span class="footer-heading">Explore</span>
+        <br>
+        <ul>
+          <li><a href="/shop">Shop</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-1">
+        <span class="footer-heading">About</span>
+        <br>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <span class="footer-heading">Contact</span>
+        <br>
+        <ul>
+          <li>Customer Service | <a href="mailto: hello@bangleandband.com">hello@bangleandband.com</a></li>
+          <li>Collaborate | <a href="mailto: collab@bangleandband.com">collab@bangleandband.com</a></li>
+          <li>PR | <a href="mailto: pr@bangleandband.com">pr@bangleandband.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="copyright" class="col-xs-12 text-center">
+      <span>Bangle & Band &copy; | All Rights Reserved.</span>
+    </div>
+  </div>
+</div>
