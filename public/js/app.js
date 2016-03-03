@@ -31,10 +31,10 @@ angular.module('bb', ['ngRoute', 'ngResource', 'LocalStorageModule', 'bb.control
 	         templateUrl: 'views/templates/shop.html',
 	         controller: 'ProductsCtrl'
 	       }).
-	       when('/cart', {
-	         templateUrl: 'views/templates/cart.html',
-	         controller: 'CartCtrl'
-	       }).
+         when('/cart', {
+             templateUrl: 'views/templates/cart.html',
+             controller: 'CartCtrl'
+         }).
 	       when('/shop/:productName', {
 	         templateUrl: 'single.html',
 	         controller: 'SingleProductCtrl',

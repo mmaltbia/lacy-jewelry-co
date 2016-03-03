@@ -51,6 +51,10 @@ angular.module('bb.controllers', ['ngRoute'])
 		    });
 
 	}])
+    
+    .controller("PressCtrl", ['$scope', '$http', '$rootScope', function ($scope, $http, $rootScope) {
+        console.log('hello press ctrl');
+        }])
 
 	.controller('CartCtrl', ['$scope', 'dataFactory', '$route', '$routeParams', '$location', function ($scope, dataFactory, $route, $routeParams, $location) {
 
