@@ -44,6 +44,10 @@ app.get('/cart', function(req, res){
 	res.sendFile(__dirname + '/public/views/templates/cart.html')
 })
 
+app.get('/press', function(req, res){
+    res.sendFile(__dirname + '/public/views/templates/press.html')
+})
+
 
 app.get('/api/products/:productName', function(req, res){
 	console.log('first console log working');

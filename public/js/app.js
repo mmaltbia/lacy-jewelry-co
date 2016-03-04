@@ -35,6 +35,10 @@ angular.module('bb', ['ngRoute', 'ngResource', 'LocalStorageModule', 'bb.control
              templateUrl: 'views/templates/cart.html',
              controller: 'CartCtrl'
          }).
+         when('/press', {
+             templateUrl: 'views/templates/press.html',
+             controller: 'PressCtrl'
+         }).
 	       when('/shop/:productName', {
 	         templateUrl: 'single.html',
 	         controller: 'SingleProductCtrl',
