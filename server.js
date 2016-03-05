@@ -71,6 +71,10 @@ app.get('/api/products/id', function(req, res){
 	});
 })
 
+app.get('*', function (req, res) {
+    res.sendFile(__dirname + '/public/views/index.html');
+});
+
 
 // listen on port 3000
 app.listen(process.env.PORT || 3000, function () {

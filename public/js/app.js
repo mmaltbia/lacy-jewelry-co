@@ -50,7 +50,7 @@ angular.module('bb', ['ngRoute', 'ngResource', 'LocalStorageModule', 'bb.control
 	                 return delay.promise;
 	             }
 	        }
-	       });
+         });
 		 $locationProvider.html5Mode({
 		 	enabled: true,
 		 	requireBase: false
