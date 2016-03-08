@@ -1,9 +1,9 @@
 <div class="container-fluid" ng-controller="SingleProductCtrl">
-  
-  <div id="shop-banner" class="col-xs-12 text-center">
-    <img src="../images/shop-banner.jpg">
+  <div class="row">
+      <div id="shop-banner" class="col-xs-12 text-center">
+          <img src="../images/shop-banner2.jpg" width="100%">
+      </div>
   </div>
- 
   <div class="container">
     <div class="row">
       <div class="col-sm-5">
@@ -19,7 +19,7 @@
             <span class="copy">{{product.materials}}</span><br>
             <span class="copy">{{product.measurements}}</span><br>
             <div>
-              <button id="addCartBtn" ng-click="addCart(product);" class="addbtn">Add To Bag</button>
+              <button id="addCartBtn" ng-click="addCart(product);" class="addbtn btn-primary btn">Add To Bag</button>
             </div>
             <div>
               <a href="#"><img src="../images/social-icons/facebook2.svg" class="social-icon" alt=""></a>

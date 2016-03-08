@@ -66,7 +66,7 @@ angular.module('bb.controllers', ['ngRoute'])
 
 	    $scope.$route = $route;
 	    $scope.$location = $location;
-
+        $scope.$cartEmpty = false;
 	    $scope.bag;
 
 	    getCart();
@@ -74,6 +74,9 @@ angular.module('bb.controllers', ['ngRoute'])
 	    	var productsInBag = JSON.parse(localStorage.getItem('ProductsInBag'));
 	    	console.log(productsInBag);
 	    	$scope.bag = productsInBag;
+            if ($scope.bag.length === 0){
+                $scope.cartEmpty = true;
+            }
 	    }
 
 	    $scope.removeFromCart = function(product) {
@@ -83,6 +86,7 @@ angular.module('bb.controllers', ['ngRoute'])
 	    	for(i=0; i<productsInBag.length; i++){
 	    		if(this.$index === i){
 	    			productsInBag.splice(i, 1);
+                    location.reload();
 	    			console.log(productsInBag);
 	    		}
 	    	};
@@ -167,9 +171,10 @@ angular.module('bb.controllers', ['ngRoute'])
 
 	    $('#addCartBtn').on('click', function(event){
 	    	event.preventDefault();
+            event.target.style.background = "#FF0101";
 	    	event.target.innerHTML = "Added to Bag!";
 	    });
-
+          
 	}
 
 ]);

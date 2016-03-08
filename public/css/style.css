@@ -13,6 +13,65 @@ a {
 
 }
 
+.addbtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #FF0101;
+    border:none;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #D20202;
+    border:none;
+}
+.btn-primary:active {
+    color: #fff;
+    background-color: #FF0101;
+    border:none;
+}
+.btn-primary:visited {
+    color: #fff;
+    background-color: #FF0101;
+    border:none;
+}
+.btn-primary:focus {
+    color: #fff;
+    background-color: #FF0101;
+    border:none;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #777;
+    border:none;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #666;
+    border:none;
+}
+.btn-secondary:active {
+    color: #fff;
+    background-color: #666;
+    border:none;
+}
+.btn-secondary:visited {
+    color: #fff;
+    background-color: #666;
+    border:none;
+}
+.btn-secondary:focus {
+    color: #fff;
+    background-color: #666;
+    border:none;
+}
+
 div.navbar-header button {
     border: none;
 }
