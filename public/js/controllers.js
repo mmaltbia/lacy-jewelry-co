@@ -86,7 +86,7 @@ angular.module('bb.controllers', ['ngRoute'])
 	    	for(i=0; i<productsInBag.length; i++){
 	    		if(this.$index === i){
 	    			productsInBag.splice(i, 1);
-                    location.reload();
+                    $route.reload();
 	    			console.log(productsInBag);
 	    		}
 	    	};
