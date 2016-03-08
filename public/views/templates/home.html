@@ -40,10 +40,10 @@
 
     <div id="conceals-container" class="container-fluid">
       <div class="row">
-        <div id="conceals-fitbit" class="col-xs-12 col-sm-6 text-center">
+        <div id="every-day" class="col-xs-12 col-sm-6 text-center">
             <p class="italic overlay">every day.</p>
         </div>
-        <div id="conceals-hairtie" class="col-xs-12 col-sm-6 text-center">
+        <div id="any-occasion" class="col-xs-12 col-sm-6 text-center">
           <p class="italic overlay">any occasion.</p>
         </div>
       </div>
@@ -87,8 +87,8 @@
       </div>
       <div class="row" ng-show="photos.length > 0">
         <div class="col-sm-4 text-center" ng-repeat="photo in photos">
-          <img ng-src="{{photo.images.standard_resolution.url}}"><br>
-          <img src="../images/quote.png" style="width: 65px; padding: 10px;"><br>
+            <img class="well" ng-src="{{photo.images.standard_resolution.url}}"><br>
+            <img src="../images/quote.png" style="width: 65px; padding: 10px;"><br>
           <p class="ig-caption col-sm-8 col-sm-offset-2">"{{photo.caption.text}}"</p>
           <span class="ig-handle col-sm-8 col-sm-offset-2">- @{{photo.user.username}}</span>
         </div>

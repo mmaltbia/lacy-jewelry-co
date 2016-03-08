@@ -1,6 +1,6 @@
 angular.module('bb.controllers', ['ngRoute'])
 	.controller("MainCtrl", ['$scope', '$http', '$rootScope', function ($scope, $http, $rootScope) {
-		  var url = 'https://api.instagram.com/v1/tags/jewelry/media/recent?client_id=5071a38fc39942a7b4707af7162b0493&callback=JSON_CALLBACK&count=3';
+		  var url = 'https://api.instagram.com/v1/tags/bangle/media/recent?client_id=5071a38fc39942a7b4707af7162b0493&callback=JSON_CALLBACK&count=3';
 		  $http.jsonp(url)
 		    .then(function (response) {
 		      console.log(response.data.data);
